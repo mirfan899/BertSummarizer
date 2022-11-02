@@ -17,7 +17,6 @@ class BertSummary(Resource):
 
     def post(self):
         args = parser.parse_args()
-        print(args)
 
         if args["text"] != "":
             if args["sentences"]:
